@@ -1,0 +1,32 @@
+class Main
+{
+    public static void main(String[] args) {
+        int num[]={7,9,3,6,99,56,35};
+        int n=num.length;
+        int start=0,end=0,i=0,j=0;
+        while(start<n)
+        { 
+            if(end==n)
+            {     
+                  start++;
+                  end=start;
+                  j=start;
+                System.out.println("\n");
+            }
+            else
+            {
+                if(j<=end)
+                {
+                 System.out.print(num[j]+" ");
+                j++;
+                }
+                else
+                {   
+                    j=start;
+                    System.out.println();
+                     end++;
+                }
+            }
+        }
+    }
+}
