@@ -1,22 +1,14 @@
-public class pp
+public class pattern
 {
     public static void main(String rgs[])
     {
         int k;
     for(int i=0;i<5;i++)
     {
-         k=(i%2==0)?1:0;
     for(int j=0;j<=i;j++)
     {
+         k=((i+j)%2==0)?1:0;
         System.out.print(k);
-        if(k==1)
-        {
-            k--;
-        }
-        else
-        {
-            k++;
-        }
     }
     System.out.println();
 }
